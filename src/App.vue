@@ -23,10 +23,10 @@ export default {
     }
   },
   mounted () {
-    console.dir(Vue)
-    this.$api.test().then(res => {
-      console.log(JSON.parse(res))
-    })
+    // console.dir(Vue)
+    // this.$api.test().then(res => {
+    //   console.log(JSON.parse(res))
+    // })
     // vConsole调试
     if (process.env.NODE_ENV !== 'production') {
       try {
