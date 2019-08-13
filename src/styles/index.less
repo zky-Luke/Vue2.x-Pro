@@ -1,0 +1,108 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td, section, article, aside, header, footer, nav, dialog, figure, hgroup, a, span, em, i, strong{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol, li {
+  list-style: none
+}
+
+em, i {
+  font-style: normal
+}
+
+b, strong{
+  font-weight: normal;
+}
+
+button{
+  border: none;
+  outline: none;
+}
+
+a{
+  text-decoration: none;
+  color: #5F5F5F;
+}
+
+a:active{
+  background: #D9D9D9;
+}
+
+body, html{
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+  overflow: hidden;
+  background: #FFF;
+  color: #585858;
+}
+
+// 定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸 
+::-webkit-scrollbar  
+{  
+  width: 0px;
+  height: 0px;
+  background-color: #F5F5F5;
+}
+
+// 定义滚动条轨道 内阴影+圆角   
+::-webkit-scrollbar-track  
+{  
+  -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0);  
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+// 定义滑块 内阴影+圆角   
+::-webkit-scrollbar-thumb  
+{  
+  border-radius: 10px;  
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);  
+  background-color: #D6D6D6;  
+}
+
+// placeholder颜色 
+::-webkit-input-placeholder { // WebKit browsers
+  color:#D6D6D6;  
+}
+:-moz-placeholder { // Mozilla Firefox 4 to 18
+  color:#D6D6D6;  
+}
+::-moz-placeholder { // Mozilla Firefox 19+
+  color:#D6D6D6;  
+}
+:-ms-input-placeholder { // Internet Explorer 10+
+  color:#D6D6D6;  
+}
+
+*{
+  // -webkit-overflow-scrolling: touch; // 弹性滑动（解决在ios端滑动卡顿）
+  -webkit-tap-highlight-color: transparent; // 用户点击iOS的Safari浏览器中的链接或JavaScript的可点击的元素时，覆盖显示的高亮颜色。
+  outline: none;  
+}
+
+*:not(input):not(textarea){
+  -webkit-touch-callout:none;    // 苹果端
+  -webkit-user-select:none;      // webkit浏览器
+  -khtml-user-select:none;       // 早期浏览器
+  -moz-user-select:none;         // 火狐
+  -ms-user-select:none;          // IE10
+  user-select:none;
+}
+
+// 弹性滑动（解决在ios端滑动卡顿）
+.openScroll{
+  -webkit-overflow-scrolling: touch;
+}
+
+input,textarea {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+}

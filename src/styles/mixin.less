@@ -1,0 +1,68 @@
+// 主色调
+@themeColor: #4EA3FE;
+
+// 宽高
+.wh(@width, @height) {
+  width: @width;
+  height: @height;
+}
+
+// 宽高背景色
+.wh-c(@width, @height,@backgroundColor) {
+  width: @width;
+  height: @height;
+  background-color: @backgroundColor;
+}
+
+// 宽高行高
+.wh-l(@width, @height) {
+  width: @width;
+  height: @height;
+  line-height: @height;
+}
+
+// 宽高左浮动
+.wh-f(@width, @height) {
+  width: @width;
+  height: @height;
+  float: left;
+}
+
+// 全屏定位
+.fs {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+// 全屏定位(除去上高度)
+.fs-noTop {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 1.333333rem;
+  bottom: 0;
+}
+
+// 绝对居中
+.f-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// 文字溢出省略号
+.text-over {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// 缩放字体
+.zoom-font(@size) {
+  -webkit-transform-origin: 0 center;
+  -webkit-transform: scale(@size);
+}
