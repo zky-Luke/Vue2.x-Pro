@@ -29,3 +29,5 @@ npm run build --report
 9. 安装amfe-flexible及px2rem-loader自适应
 10. 添加测试testing、预生产presentation、生产production环境
 11. axios二次封装
+
+附：
