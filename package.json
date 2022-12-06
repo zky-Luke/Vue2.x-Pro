@@ -20,7 +20,7 @@
     "less": "^3.8.0",
     "less-loader": "^4.1.0",
     "mockjs": "^1.0.1-beta3",
-    "qs": "^6.7.0",
+    "qs": "^6.7.3",
     "svg-sprite-loader": "^3.8.0",
     "vconsole": "^3.0.0",
     "vue": "^2.5.2",
